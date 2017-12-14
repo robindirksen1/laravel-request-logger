@@ -2,14 +2,13 @@
 
 namespace RobinDirksen1\LaravelRequestLogger\Test;
 
-use RobinDirksen1\LaravelRequestLogger\RequestLoggerFacade;
-use RobinDirksen1\LaravelRequestLogger\RequestLoggerServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use RobinDirksen1\LaravelRequestLogger\RequestLoggerFacade;
 
 class TestCase extends OrchestraTestCase
 {
     /**
-     * Load package service provider
+     * Load package service provider.
      * @param  \Illuminate\Foundation\Application $app
      * @return RobinDirksen1\LaravelRequestLogger\LaravelRequestLoggerServiceProvider
      */
@@ -18,9 +17,8 @@ class TestCase extends OrchestraTestCase
         return [LaravelRequestLogger::class];
     }
 
-
     /**
-     * Load package alias
+     * Load package alias.
      * @param  \Illuminate\Foundation\Application $app
      * @return array
      */

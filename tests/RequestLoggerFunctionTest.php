@@ -7,7 +7,7 @@ use RobinDirksen1\LaravelRequestLogger\RequestLogger;
 class RequestLoggerFunctionTest extends TestCase
 {
     /**
-     * Check that the multiply method returns correct result
+     * Check that the multiply method returns correct result.
      * @return void
      */
     public function testMultiplyReturnsCorrectValue()
