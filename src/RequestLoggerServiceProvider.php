@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinDirksen1\LaravelRequestLogger;
 
 use Illuminate\Support\ServiceProvider;
@@ -12,9 +13,7 @@ class RequestLoggerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
     }
-
 
     /**
      * Register the application services.
