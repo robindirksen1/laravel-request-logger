@@ -1,0 +1,30 @@
+{
+    "name": "robindirksen1/laravel-request-logger",
+    "description": "Save all the request to a log",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Dirksen",
+            "email": "robin@famdirksen.nl"
+        }
+    ],
+
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "illuminate/support": "~5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RobinDirksen1\\LaravelRequestLogger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RobinDirksen1\\LaravelRequestLogger\\Test\\": "tests/"
+        }
+    }
+}
