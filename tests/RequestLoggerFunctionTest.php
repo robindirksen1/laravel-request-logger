@@ -2,9 +2,10 @@
 
 namespace RobinDirksen1\LaravelRequestLogger\Test;
 
+use Orchestra\Testbench\TestCase as Orchestra;
 use RobinDirksen1\LaravelRequestLogger\RequestLogger;
 
-class RequestLoggerFunctionTest extends TestCase
+abstract class RequestLoggerFunctionTest extends Orchestra
 {
     /**
      * Check that the multiply method returns correct result.

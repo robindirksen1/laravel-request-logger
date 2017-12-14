@@ -11,11 +11,11 @@
     ],
 
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "laravel/framework": "5.5.*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5",
-        "illuminate/support": "~5.3.0",
+        "phpunit/phpunit" : "~5.7",
         "orchestra/testbench": "^3.3"
     },
     "autoload": {
@@ -27,5 +27,8 @@
         "psr-4": {
             "RobinDirksen1\\LaravelRequestLogger\\Test\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }
