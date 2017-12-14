@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\File;
 
 class RequestLogger
 {
-    public function saveLog($data, $type = 'access') {
-        if(empty($type)) {
+    public function saveLog($data, $type = 'access')
+    {
+        if (empty($type)) {
             throw new \Exception('Type isnt correct set.');
         }
 
@@ -16,10 +17,10 @@ class RequestLogger
 
         $folder = storage_path($base_path);
 
-        if(!File::exists($folder)) {
+        if (! File::exists($folder)) {
             $result = File::makeDirectory($folder);
 
-            if(!$result) {
+            if (! $result) {
                 throw new \Exception('Cannot create folder in storage path.');
             }
         }
@@ -28,7 +29,7 @@ class RequestLogger
         $file = storage_path($base_path.'/'.$date_folder.'/'.$type.'.log');
 
         $write_check = File::put($file, $data);
-        if(!$write_check) {
+        if (! $write_check) {
             throw new \Exception('Cannot write content to file.');
         }
 
